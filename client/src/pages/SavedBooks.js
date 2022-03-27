@@ -76,6 +76,8 @@ const SavedBooks = () => {
                   <p className="small">Authors: {book.authors}</p>
                   <Card.Text>{book.description}</Card.Text>
                   { /* TODO: show the book's pageCount and published Date */}
+                  <Card.Text>Amount of pages: {book.pageCount}</Card.Text>
+                  <Card.Text>Published on: {book.publishedDate}</Card.Text>
                   <Button
                     className="btn-block btn-danger"
                     onClick={() => handleDeleteBook(book.bookId)}

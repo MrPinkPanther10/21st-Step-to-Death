@@ -19,8 +19,8 @@ const typeDefs = gql`
     image: String
     link: String
     title: String!
-    pageCount: Number
-    publishedDate: String!
+    pageCount: String
+    publishedDate: String
   }
 
   type Auth {
@@ -35,8 +35,8 @@ const typeDefs = gql`
     image: String
     link: String
     title: String!
-    pageCount: Number
-    publishedDate: String!
+    pageCount: String
+    publishedDate: String
   }
 
   type Query {

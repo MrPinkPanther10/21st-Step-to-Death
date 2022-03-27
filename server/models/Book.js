@@ -1,4 +1,6 @@
 const { Schema } = require('mongoose');
+const dateFormat = require('../utils/dateFormat');
+
 
 // This is a subdocument schema, it won't become its own model but we'll use it as the schema for the User's `savedBooks` array in User.js
 const bookSchema = new Schema({
@@ -28,13 +30,13 @@ const bookSchema = new Schema({
   },
   //TODO: add the pageCount property. It should be a Number.
   pageCount: {
-    type: Number,
-    required: true,
+    type: String,
   },
   //TODO: add the publishedDate property. It should be a String.
   publishedDate: {
-    type: String,
-    required: true,
+    type: Date,
+    default: Date.now,
+    get: timestamp => dateFormat(timestamp)
   }
 });
 
