@@ -19,7 +19,7 @@ const typeDefs = gql`
     image: String
     link: String
     title: String!
-    pageCount: String
+    pageCount: Int
     publishedDate: String
   }
 
@@ -35,7 +35,7 @@ const typeDefs = gql`
     image: String
     link: String
     title: String!
-    pageCount: String
+    pageCount: Int
     publishedDate: String
   }
 

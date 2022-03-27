@@ -30,7 +30,7 @@ const bookSchema = new Schema({
   },
   //TODO: add the pageCount property. It should be a Number.
   pageCount: {
-    type: String,
+    type: Number,
   },
   //TODO: add the publishedDate property. It should be a String.
   publishedDate: {
